@@ -1,5 +1,6 @@
 package se.iths.pialalmamun.webshop;
 
+import se.iths.pialalmamun.webshop.interfaces.ProductStorage;
 import se.iths.pialalmamun.webshop.model.Product;
 
 import java.io.IOException;

@@ -52,8 +52,8 @@ public class Product {
     public static Product fromFileLine(String line) {
         var parts = line.split(";");
 
-        if (parts.length != 5) {
-            throw new IllegalArgumentException("Invalid line format" + parts.toString());
+        if (parts.length != 4) {
+            IO.println("Invalid line format" + parts.toString());
         }
 
         return new Product(parts[0], parts[1], Double.parseDouble(parts[2]), parts[3]);
